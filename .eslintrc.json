@@ -1,0 +1,86 @@
+{
+    "env": {
+        "browser": true,
+        "react-native/react-native": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:react-native/all",
+        "airbnb-typescript"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": ["tsconfig.json"]
+    },
+    "plugins": [
+        "react",
+        "react-native",
+        "@typescript-eslint",
+        "import",
+        "jsx-a11y"
+    ],
+    "rules": {
+      "eol-last": "error",
+      "eqeqeq": "error",
+      "guard-for-in": "warn",
+      "max-len": [
+        "error",
+        {
+          "code": 95,
+          "comments": 95,
+          "ignoreUrls": true,
+          "ignoreTemplateLiterals": true
+        }
+      ],
+      "no-console": "warn",
+      "no-empty": "warn",
+      "no-eval": "error",
+      "no-mixed-operators": [
+        "error",
+        {
+          "allowSamePrecedence": true
+        }
+      ],
+      "no-multiple-empty-lines": [
+        "error",
+        { "max": 2 }
+      ],
+      "no-trailing-spaces": "error",
+      "prefer-const": "warn",
+      "radix": "warn",
+      "sort-imports": [
+        "error",
+        {
+          "ignoreCase": true,
+          "ignoreDeclarationSort": false,
+          "ignoreMemberSort": false,
+          "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+          "allowSeparatedGroups": false
+        }
+      ],
+      "spaced-comment": "error",
+      "jsx-a11y/no-static-element-interactions": "warn",
+      "jsx-a11y/anchor-is-valid": "warn",
+      "jsx-a11y/no-noninteractive-element-interactions": "warn",
+      "jsx-a11y/mouse-events-have-key-events": "warn",
+      "jsx-a11y/click-events-have-key-events": "warn",
+      "react/jsx-one-expression-per-line": "warn",
+      "react/destructuring-assignment": "warn",
+      "react/no-unescaped-entities": "warn",
+      "react/boolean-prop-naming": "error",
+      "react/jsx-closing-bracket-location": "error",
+      "react/jsx-closing-tag-location": "error",
+      "react/jsx-curly-brace-presence": "error"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+}
